@@ -1,7 +1,7 @@
 ﻿using CSharpAllExamples.Examples;
 using CSharpAllExamples.Examples.Abstraction;
+using CSharpAllExamples.OOP.Inheritance.MultipleInheritance;
 using CSharpAllExamples.OOP.Interfaces;
-using CSharpAllExamples.RandomExample01.PassingParameters;
 using System;
 using System.Reflection;
 
@@ -14,7 +14,9 @@ namespace CSharpAllExamples
         {
 
 
-            ParametersTypes.IMPParametersTypesOUTOnly();
+            clsMultipleInheritance.MultipleInheritanceRun();
+            //clsInheritance.InheritanceExampleRun();
+            //ParametersTypes.IMPParametersTypesOUTOnly();
             //ParametersTypes.IMPParametersTypes();
 
             //LazyLoadingPatternTest2 _LazyLoadingPatternTest2 = new LazyLoadingPatternTest2();

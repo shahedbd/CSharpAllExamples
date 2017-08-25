@@ -65,6 +65,11 @@
     <Compile Include="Examples\GenericMethods.cs" />
     <Compile Include="Examples\RandomExample01\OutTestIMP.cs" />
     <Compile Include="OOP\DIorIOC\DependencyInjection.cs" />
+    <Compile Include="OOP\Inheritance\clsInheritance.cs" />
+    <Compile Include="OOP\Inheritance\MultipleInheritance\clsMultipleInheritance.cs" />
+    <Compile Include="OOP\Inheritance\MultipleInheritance\IPaintCost.cs" />
+    <Compile Include="OOP\Inheritance\MultipleInheritance\Rectangle.cs" />
+    <Compile Include="OOP\Inheritance\MultipleInheritance\Shape.cs" />
     <Compile Include="OOP\Interfaces\InterfaceExamples.cs" />
     <Compile Include="OOP\Interfaces\ITransactions.cs" />
     <Compile Include="OOP\Override\OverrideIMP.cs" />
@@ -102,6 +107,7 @@
     <None Include="Notes\Structs.docx" />
     <None Include="OOP\Constructor\Constructor.docx" />
     <None Include="OOP\DIorIOC\DependencyInjection.docx" />
+    <None Include="OOP\Inheritance\Inheritance.docx" />
     <None Include="OOP\Interfaces\Interface.docx" />
     <None Include="OOP\Override\Overwride.docx" />
     <None Include="OOP\Polymorphism\Polymorphism.docx" />
