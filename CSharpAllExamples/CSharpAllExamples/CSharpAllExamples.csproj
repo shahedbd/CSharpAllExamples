@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0206D2E0-949E-4508-B023-02976784C2FC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpAllExamples</RootNamespace>
+    <AssemblyName>CSharpAllExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\AbstractClass.cs" />
+    <Compile Include="Examples\Abstraction\AbstractTest.cs" />
+    <Compile Include="Examples\AccessModifiers\InternalAccessModifiers.cs" />
+    <Compile Include="Examples\AccessModifiers\PrivateAccessModifiers.cs" />
+    <Compile Include="Examples\AccessModifiers\ProtectedAccessModifiers.cs" />
+    <Compile Include="Examples\AccessModifiers\ProtectedInternalAccessModifiers.cs" />
+    <Compile Include="Examples\AccessModifiers\PublicAccessModifiers.cs" />
+    <Compile Include="Examples\AnonymousTypes.cs" />
+    <Compile Include="Examples\ArrayAtoZ.cs" />
+    <Compile Include="Examples\AwaitAndAsync\AwaitAndAsync.cs" />
+    <Compile Include="Examples\Collections\CollectionIMP.cs" />
+    <Compile Include="Examples\DelegatesGeneric.cs" />
+    <Compile Include="Examples\DelegateTest.cs" />
+    <Compile Include="Examples\DelegateUse.cs" />
+    <Compile Include="Examples\EnumTest.cs" />
+    <Compile Include="Examples\ExtensionMethodsExample.cs" />
+    <Compile Include="Examples\GenericArray.cs" />
+    <Compile Include="Examples\GenericMethods.cs" />
+    <Compile Include="Examples\RandomExample01\OutTestIMP.cs" />
+    <Compile Include="OOP\DIorIOC\DependencyInjection.cs" />
+    <Compile Include="OOP\Interfaces\InterfaceExamples.cs" />
+    <Compile Include="OOP\Interfaces\ITransactions.cs" />
+    <Compile Include="OOP\Override\OverrideIMP.cs" />
+    <Compile Include="Examples\PartialAndStaticClass\MyCalss.cs" />
+    <Compile Include="Examples\Polymorphism.cs" />
+    <Compile Include="RandomExample01\AssociationAggregationComposition.cs" />
+    <Compile Include="RandomExample01\clsTestCode.cs" />
+    <Compile Include="RandomExample01\ConstantReadonlyStatic\ConstantReadonlyStatic.cs" />
+    <Compile Include="RandomExample01\LambdaExpressions.cs" />
+    <Compile Include="Examples\ReflectionTestCls.cs" />
+    <Compile Include="Examples\SealedClass.cs" />
+    <Compile Include="Examples\StructExamples.cs" />
+    <Compile Include="Examples\SummSubtMulDivFunctions.cs" />
+    <Compile Include="OOP\Constructor\ConstructorIMP.cs" />
+    <Compile Include="OOP\Interfaces\InterfaceIMP.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomExample01\LazyLoadingPattern\LazyLoadingPattern.cs" />
+    <Compile Include="RandomExample01\PassingParameters\ParametersTypes.cs" />
+    <Compile Include="RandomExample01\thisEXM.cs" />
+    <Compile Include="VM\MyData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Examples\Abstraction\Abstraction.docx" />
+    <None Include="Examples\AccessModifiers\AccessModifiers.docx" />
+    <None Include="Examples\AwaitAndAsync\AwaitAndAsync.docx" />
+    <None Include="Examples\Collections\Collections .docx" />
+    <None Include="Examples\PartialAndStaticClass\PartialAndStaticClass.docx" />
+    <None Include="Notes\Abstract Class versus Interface.docx" />
+    <None Include="Notes\Delegates_C#.docx" />
+    <None Include="Notes\Extension Method.docx" />
+    <None Include="Notes\Generics_C#.docx" />
+    <None Include="Notes\Reflection_C#.docx" />
+    <None Include="Notes\Structs.docx" />
+    <None Include="OOP\Constructor\Constructor.docx" />
+    <None Include="OOP\DIorIOC\DependencyInjection.docx" />
+    <None Include="OOP\Interfaces\Interface.docx" />
+    <None Include="OOP\Override\Overwride.docx" />
+    <None Include="OOP\Polymorphism\Polymorphism.docx" />
+    <None Include="RandomExample01\ConstantReadonlyStatic\ConstantReadonlyStatic.docx" />
+    <None Include="RandomExample01\LazyLoadingPattern\LazyLoadingPattern.docx" />
+    <None Include="RandomExample01\PassingParameters\OutRefValParameters.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OutPut\TMP01.txt" />
+    <Content Include="RandomExample01\AGC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Test.DLL.Project\Test.DLL.Project.csproj">
+      <Project>{d6bfc4bb-bd4b-429f-a0bb-975da05f4244}</Project>
+      <Name>Test.DLL.Project</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
