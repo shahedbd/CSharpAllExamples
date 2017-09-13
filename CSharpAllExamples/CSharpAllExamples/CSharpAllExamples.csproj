@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Examples\AbstractClass.cs" />
-    <Compile Include="Examples\Abstraction\AbstractTest.cs" />
     <Compile Include="Examples\AccessModifiers\InternalAccessModifiers.cs" />
     <Compile Include="Examples\AccessModifiers\PrivateAccessModifiers.cs" />
     <Compile Include="Examples\AccessModifiers\ProtectedAccessModifiers.cs" />
@@ -64,6 +63,7 @@
     <Compile Include="Examples\GenericArray.cs" />
     <Compile Include="Examples\GenericMethods.cs" />
     <Compile Include="Examples\RandomExample01\OutTestIMP.cs" />
+    <Compile Include="OOP\Abstraction\AbstractionIMP.cs" />
     <Compile Include="OOP\DIorIOC\DependencyInjection.cs" />
     <Compile Include="OOP\Inheritance\clsInheritance.cs" />
     <Compile Include="OOP\Inheritance\MultipleInheritance\clsMultipleInheritance.cs" />
@@ -94,7 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Examples\Abstraction\Abstraction.docx" />
+    <None Include="OOP\Abstraction\Abstraction.docx" />
     <None Include="Examples\AccessModifiers\AccessModifiers.docx" />
     <None Include="Examples\AwaitAndAsync\AwaitAndAsync.docx" />
     <None Include="Examples\Collections\Collections .docx" />
@@ -125,7 +125,9 @@
       <Name>Test.DLL.Project</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Examples\Abstraction\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

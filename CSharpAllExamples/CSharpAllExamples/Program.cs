@@ -1,6 +1,5 @@
 ﻿using CSharpAllExamples.Examples;
-using CSharpAllExamples.Examples.Abstraction;
-using CSharpAllExamples.OOP.Inheritance.MultipleInheritance;
+using CSharpAllExamples.OOP.Abstraction;
 using CSharpAllExamples.OOP.Interfaces;
 using System;
 using System.Reflection;
@@ -12,9 +11,8 @@ namespace CSharpAllExamples
 
         static void Main(string[] args)
         {
-
-
-            clsMultipleInheritance.MultipleInheritanceRun();
+            AbstractionIMP.AbstractionRun();
+            //clsMultipleInheritance.MultipleInheritanceRun();
             //clsInheritance.InheritanceExampleRun();
             //ParametersTypes.IMPParametersTypesOUTOnly();
             //ParametersTypes.IMPParametersTypes();
@@ -66,16 +64,6 @@ namespace CSharpAllExamples
             //LambdaExpressions.LambdaHello();
 
             Console.ReadKey();
-        }
-
-
-        static void AbstractIMP()
-        {
-            MyDog oDog = new MyDog();
-            IMyAnimal oIAnimal = oDog;
-
-            oIAnimal.Sound();
-            oIAnimal.Eat();
         }
 
 
