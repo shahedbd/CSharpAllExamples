@@ -120,6 +120,7 @@
   <ItemGroup>
     <Content Include="OutPut\TMP01.txt" />
     <Content Include="RandomExample01\AGC.jpg" />
+    <Content Include="Resources\Capture.JPG" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Test.DLL.Project\Test.DLL.Project.csproj">

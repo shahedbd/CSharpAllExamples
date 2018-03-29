@@ -1,5 +1,6 @@
 ﻿using CSharpAllExamples.Examples;
 using CSharpAllExamples.OOP.Interfaces;
+using CSharpAllExamples.OOP.Polymorphism.MethodOverriding;
 using System;
 using System.Reflection;
 
@@ -15,17 +16,17 @@ namespace CSharpAllExamples
 
 
 
-            OverloadingTest oOverloadingTest = new OverloadingTest();
-            Console.WriteLine(oOverloadingTest.sumStuff(5, 5));
-            Console.WriteLine(oOverloadingTest.sumStuff(5.5, 5.5));
-            Console.WriteLine(oOverloadingTest.sumStuff(5, 5, 5));
+            //OverloadingTest oOverloadingTest = new OverloadingTest();
+            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5));
+            //Console.WriteLine(oOverloadingTest.sumStuff(5.5, 5.5));
+            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5, 5));
 
 
-            //ParentClass oParentClass = new ParentClass();
-            //oParentClass.Display();
+            ParentClass oParentClass = new ParentClass();
+            oParentClass.Display();
 
-            //oParentClass = new clsChild();
-            //oParentClass.Display();
+            oParentClass = new clsChild();
+            oParentClass.Display();
 
 
 
