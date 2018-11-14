@@ -74,7 +74,9 @@
     <Compile Include="OOP\Interfaces\ITransactions.cs" />
     <Compile Include="OOP\Override\OverrideIMP.cs" />
     <Compile Include="Examples\PartialAndStaticClass\MyCalss.cs" />
-    <Compile Include="Examples\Polymorphism.cs" />
+    <Compile Include="OOP\Polymorphism\MethodOverloading\OverloadingTest.cs" />
+    <Compile Include="OOP\Polymorphism\MethodOverriding\clsChild.cs" />
+    <Compile Include="OOP\Polymorphism\MethodOverriding\ParentClass.cs" />
     <Compile Include="RandomExample01\AssociationAggregationComposition.cs" />
     <Compile Include="RandomExample01\clsTestCode.cs" />
     <Compile Include="RandomExample01\ConstantReadonlyStatic\ConstantReadonlyStatic.cs" />
@@ -118,6 +120,7 @@
   <ItemGroup>
     <Content Include="OutPut\TMP01.txt" />
     <Content Include="RandomExample01\AGC.jpg" />
+    <Content Include="Resources\Capture.JPG" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Test.DLL.Project\Test.DLL.Project.csproj">

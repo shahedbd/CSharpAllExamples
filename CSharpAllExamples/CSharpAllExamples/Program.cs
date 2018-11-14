@@ -1,9 +1,9 @@
 ﻿using CSharpAllExamples.Examples;
-using CSharpAllExamples.OOP.Abstraction;
 using CSharpAllExamples.OOP.Interfaces;
-using CSharpAllExamples.RandomExample01.PassingParameters;
+using CSharpAllExamples.OOP.Polymorphism.MethodOverriding;
 using System;
 using System.Reflection;
+
 
 namespace CSharpAllExamples
 {
@@ -12,8 +12,23 @@ namespace CSharpAllExamples
 
         static void Main(string[] args)
         {
-            //ParametersTypes.IMPParametersTypesOUTOnly();
-            ImplementingReflection2();
+
+
+
+
+            //OverloadingTest oOverloadingTest = new OverloadingTest();
+            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5));
+            //Console.WriteLine(oOverloadingTest.sumStuff(5.5, 5.5));
+            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5, 5));
+
+
+            ParentClass oParentClass = new ParentClass();
+            oParentClass.Display();
+
+            oParentClass = new clsChild();
+            oParentClass.Display();
+
+
 
             //AbstractionIMP.AbstractionRun();
             //clsMultipleInheritance.MultipleInheritanceRun();
@@ -245,16 +260,6 @@ namespace CSharpAllExamples
             obj2.TWO();
             obj2.FOUR();
         }
-
-
-        static void ImplementOverriding()
-        {
-            ParrentClass oParrentClass = new ParrentClass();
-            ChildClass oChildClass = new ChildClass();
-            oParrentClass.print();
-            oChildClass.print();
-        }
-
 
 
     }
