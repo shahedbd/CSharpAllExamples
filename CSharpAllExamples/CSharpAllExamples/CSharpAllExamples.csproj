@@ -70,8 +70,9 @@
     <Compile Include="OOP\Inheritance\MultipleInheritance\IPaintCost.cs" />
     <Compile Include="OOP\Inheritance\MultipleInheritance\Rectangle.cs" />
     <Compile Include="OOP\Inheritance\MultipleInheritance\Shape.cs" />
-    <Compile Include="OOP\Interfaces\InterfaceExamples.cs" />
     <Compile Include="OOP\Interfaces\ITransactions.cs" />
+    <Compile Include="OOP\Interfaces\TransactionModel.cs" />
+    <Compile Include="OOP\Interfaces\Transactions.cs" />
     <Compile Include="OOP\Override\OverrideIMP.cs" />
     <Compile Include="Examples\PartialAndStaticClass\MyCalss.cs" />
     <Compile Include="OOP\Polymorphism\MethodOverloading\OverloadingTest.cs" />
@@ -86,7 +87,6 @@
     <Compile Include="Examples\StructExamples.cs" />
     <Compile Include="Examples\SummSubtMulDivFunctions.cs" />
     <Compile Include="OOP\Constructor\ConstructorIMP.cs" />
-    <Compile Include="OOP\Interfaces\InterfaceIMP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomExample01\LazyLoadingPattern\LazyLoadingPattern.cs" />

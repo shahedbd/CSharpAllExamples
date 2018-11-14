@@ -1,6 +1,6 @@
 ﻿using CSharpAllExamples.Examples;
+using CSharpAllExamples.Examples.PartialAndStaticClass;
 using CSharpAllExamples.OOP.Interfaces;
-using CSharpAllExamples.OOP.Polymorphism.MethodOverriding;
 using System;
 using System.Reflection;
 
@@ -12,78 +12,18 @@ namespace CSharpAllExamples
 
         static void Main(string[] args)
         {
-
-
-
-
-            //OverloadingTest oOverloadingTest = new OverloadingTest();
-            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5));
-            //Console.WriteLine(oOverloadingTest.sumStuff(5.5, 5.5));
-            //Console.WriteLine(oOverloadingTest.sumStuff(5, 5, 5));
-
-
-            ParentClass oParentClass = new ParentClass();
-            oParentClass.Display();
-
-            oParentClass = new clsChild();
-            oParentClass.Display();
-
-
-
-            //AbstractionIMP.AbstractionRun();
-            //clsMultipleInheritance.MultipleInheritanceRun();
-            //clsInheritance.InheritanceExampleRun();
-            //ParametersTypes.IMPParametersTypesOUTOnly();
-            //ParametersTypes.IMPParametersTypes();
-
-            //LazyLoadingPatternTest2 _LazyLoadingPatternTest2 = new LazyLoadingPatternTest2();
-            //_LazyLoadingPatternTest2.IMPLazyLoadingPattern();
-
-            //IMPAbstractClass.EXEAbtructAction();
-            //StructExamples.StructIMP();
-            //ImplementAbtructClass();
-
-            //AnonymousTypes oAnonymousTypes = new AnonymousTypes();
-            //oAnonymousTypes.TestAnonType();
-
-
             //ImplementInterface();
-            //ImplementInterface2();
-            //ImplementDelegate3();
 
-            //ImplementingGenericArray();
-            //ImplementingGenericMethods();
-
-            //ImplementingReflection2();
-
-            //ImplementingExtensionMethods();
-
-            //ImplementingEnum();
-
-            //ImplementOverriding();
-
-
-            //PartialAndStaticClassIMP();
-            //OverrideExe();
-
-            //TemperatureConverter.StatitClassIMP();
-
-            //AbstractIMP();
-
-            //AwaitAndAsync.MyMethodAsync();
-
-            //PublicAccessModifiers.ExePublicAccessModifiers();
-            //PrivateAccessModifiers.ExePrivateAccessModifiers();
-
-
-            //ProtectedInternalAccessModifiers.ExeProtectedInternalAccessModifiers();
-
-            //DelegateTest.ImplementDelegate();
-
-            //LambdaExpressions.LambdaHello();
+            Employee obj = new Employee();
+            obj.DoWork();
+            obj.GoToLunch();
 
             Console.ReadKey();
         }
+
+
+
+
 
 
         static void ImplementingEnum()
@@ -239,28 +179,11 @@ namespace CSharpAllExamples
 
         static void ImplementInterface()
         {
-            Transaction t1 = new Transaction("001", "8/10/2012", 78900.00);
-            Transaction t2 = new Transaction("002", "9/10/2012", 451900.00);
+            Transaction t1 = new Transaction("001", DateTime.Today.ToShortDateString(), 100);
+            Transaction t2 = new Transaction("002", DateTime.Today.ToShortDateString(), 200);
             t1.showTransaction();
             t2.showTransaction();
-            Console.ReadKey();
         }
-
-        static void ImplementInterface2()
-        {
-            Console.WriteLine("This is ODD");
-            IFive obj1 = new ODDEVEN();
-            obj1.ONE();
-            obj1.THREE();
-            obj1.FIVE();
-
-
-            Console.WriteLine("\n\nThis is EVEN");
-            IEVEN obj2 = new ODDEVEN();
-            obj2.TWO();
-            obj2.FOUR();
-        }
-
 
     }
 }
