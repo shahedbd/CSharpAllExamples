@@ -1,6 +1,7 @@
 ﻿using CSharpAllExamples.Examples;
 using CSharpAllExamples.OOP.Abstraction;
 using CSharpAllExamples.OOP.Interfaces;
+using CSharpAllExamples.RandomExample01.PassingParameters;
 using System;
 using System.Reflection;
 
@@ -11,7 +12,10 @@ namespace CSharpAllExamples
 
         static void Main(string[] args)
         {
-            AbstractionIMP.AbstractionRun();
+            //ParametersTypes.IMPParametersTypesOUTOnly();
+            ImplementingReflection2();
+
+            //AbstractionIMP.AbstractionRun();
             //clsMultipleInheritance.MultipleInheritanceRun();
             //clsInheritance.InheritanceExampleRun();
             //ParametersTypes.IMPParametersTypesOUTOnly();
@@ -99,9 +103,14 @@ namespace CSharpAllExamples
         {
             MemberInfo info = typeof(ReflectionTestCls);
             object[] attributes = info.GetCustomAttributes(true);
-            for (int i = 0; i < attributes.Length; i++)
+            //for (int i = 0; i < attributes.Length; i++)
+            //{
+            //    Console.WriteLine(attributes[i]);
+            //}
+
+            foreach (var item in attributes)
             {
-                System.Console.WriteLine(attributes[i]);
+                Console.WriteLine(item);
             }
 
         }
